@@ -201,3 +201,51 @@ p {
     color: var(--orange-600);
 }
 
+/* Navigation */
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 0.25rem;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--gray-800);
+    border-radius: var(--radius);
+    transition: all var(--transition);
+}
+
+.nav-link:hover {
+    color: var(--orange-600);
+    background-color: var(--orange-100);
+}
+
+.nav-link.active {
+    color: var(--orange-600);
+    background-color: var(--orange-100);
+}
+
+/* Mobile Menu Button */
+
+.mobile-menu-button {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.mobile-menu-btn span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--black);
+    border-radius: 2px;
+    transition: var(--transition);
+}
