@@ -25,8 +25,8 @@
 
         <nav class="main-nav" aria-label="Main Navigation">
             <ul class="nav-list">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="learn.html" class="nav-link">Learn</a></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="learn.html" class="nav-link active">Learn</a></li>
                 <li><a href="practice.html" class="nav-link">Practice</a></li>
                 <li><a href="quiz.html" class="nav-link">Quiz</a></li>
                 <li><a href="help.html" class="nav-link">Help</a></li>
@@ -40,20 +40,127 @@
     </div>
 </header>
 
-<!-- Main Section-->
+    <!-- Hero Section-->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Learn Essential Digital Skills</h1>
+
+                <p class="hero-subtitle">
+                    Explore beginner-friendly lessons designed to help you build confidence with technology.
+                    Each topic below gives you a quick introduction before the full lesson launches.
+                </p>
+
+            </div>
+        </section>
 
 
+        <!-- Carousel -- buttons are disabled for accessibility -->
+        <section class="learn-carousel">
+    <h2>Learning Topics</h2>
 
+    <div class="carousel" aria-roledescription="carousel" aria-label="Learning topics carousel">
 
+        <button class="carousel-btn prev" type="button" aria-label="Previous slide">‹</button>
 
+        <div class="carousel-viewport" id="carouselViewport">
+            <div class="carousel-track" id="carouselTrack">
 
+                <!-- Slide 1 -->
+                <article class="learn-card" aria-label="Mouse and Keyboard Skills">
+                    <h3>Mouse &amp; Keyboard Skills</h3>
 
+                    <p>
+                        The mouse and keyboard are the main tools used to control a computer.
+                        Getting comfortable with clicking, scrolling, and typing builds confidence quickly.
+                    </p>
 
+                    <p><strong>Definition:</strong> A mouse is a pointing device used to select things on-screen.
+                        A keyboard is used to type letters, numbers, and shortcuts.</p>
 
+                    <p><strong>Tip:</strong> Practise right-clicking an icon and reading the menu options.
+                        It teaches you how computers offer choices.</p>
 
+                    <button class="btn btn-secondary" type="button" disabled>Coming Soon</button>
+                </article>
 
+                <!-- Slide 2 -->
+                <article class="learn-card" aria-label="Internet and Internet Safety">
+                    <h3>Internet &amp; Internet Safety</h3>
 
-<!-- Footer -->
+                    <p>
+                        The internet lets you browse websites, watch videos, and use online services.
+                        Learning basic safety helps you avoid scams and risky sites.
+                    </p>
+
+                    <p><strong>Definition:</strong> The internet is a global network that connects devices so
+                        information can be shared online.</p>
+
+                    <p><strong>Tip:</strong> Look for <strong>https://</strong> in the web address and a padlock icon
+                        before entering personal details.</p>
+
+                    <button class="btn btn-secondary" type="button" disabled>Coming Soon</button>
+                </article>
+
+                <!-- Slide 3 -->
+                <article class="learn-card" aria-label="Hardware vs Software">
+                    <h3>Hardware vs Software</h3>
+
+                    <p>
+                        Computers need physical parts and programs to work. Knowing which is which helps
+                        you describe problems more clearly (and fix them faster).
+                    </p>
+
+                    <p><strong>Definition:</strong> Hardware is the physical equipment (screen, keyboard, laptop).
+                        Software is what runs on it (apps, websites, operating systems).</p>
+
+                    <p><strong>Tip:</strong> If you can touch it, it’s hardware. If it’s on the screen, it’s software.</p>
+
+                    <button class="btn btn-secondary" type="button" disabled>Coming Soon</button>
+                </article>
+
+                <!-- Slide 4 -->
+                <article class="learn-card" aria-label="Email and Email Safety">
+                    <h3>Email &amp; Email Safety</h3>
+
+                    <p>
+                        Email is used for messages, appointments, and attachments. Learning the basics
+                        helps you communicate clearly and avoid phishing attempts.
+                    </p>
+
+                    <p><strong>Definition:</strong> Email (electronic mail) is a way to send digital messages over the internet.</p>
+
+                    <p><strong>Tip:</strong> If an email pressures you to “act now” or “confirm details”, slow down and double-check the sender.</p>
+
+                    <button class="btn btn-secondary" type="button" disabled>Coming Soon</button>
+                </article>
+
+                <!-- Slide 5 -->
+                <article class="learn-card" aria-label="Viruses and Computer Safety">
+                    <h3>Viruses &amp; Computer Safety</h3>
+
+                    <p>
+                        Computers can be infected by harmful software (malware). Basic habits like updates
+                        and careful downloads reduce risk massively.
+                    </p>
+
+                    <p><strong>Definition:</strong> A virus is a type of malicious software designed to spread and cause damage or steal information.</p>
+
+                    <p><strong>Tip:</strong> Keep your computer updated and avoid downloading files from unfamiliar websites.</p>
+
+                    <button class="btn btn-secondary" type="button" disabled>Coming Soon</button>
+                </article>
+
+            </div>
+        </div>
+
+        <button class="carousel-btn next" type="button" aria-label="Next slide">›</button>
+
+    </div>
+</section>
+    </main>
+
+    <!-- Footer -->
  <footer class="site-footer">
     <div class="footer-inner">
         <div class="footer-brand">
@@ -94,6 +201,6 @@
     </div>
 </footer>
 
-<script src="assets/script/script.js"></script>
+<script src="scripts/script.js"></script>
 </body>
 </html>

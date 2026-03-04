@@ -366,6 +366,78 @@ p {
     color: var(--gray-600);
 }
 
+/* Learn Page Carousel */
+/* LEARN PAGE – CAROUSEL */
+
+.learn-carousel {
+    padding: 4rem 1.5rem;
+    text-align: center;
+}
+
+.carousel {
+    max-width: 900px;
+    margin: 2rem auto 0;
+    display: grid;
+    grid-template-columns: 44px 1fr 44px;
+    gap: 1rem;
+    align-items: center;
+}
+
+.carousel-viewport {
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform var(--transition);
+    will-change: transform;
+}
+
+.learn-card {
+    flex: 0 0 100%;
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    text-align: left;
+}
+
+.learn-card p {
+    margin-top: 0.75rem;
+    color: var(--gray-600);
+}
+
+.learn-card .btn {
+    margin-top: 1.25rem;
+}
+
+/* Buttons */
+.carousel-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background: var(--orange-500);
+    color: var(--white);
+    font-size: 1.6rem;
+    line-height: 1;
+    display: grid;
+    place-items: center;
+    transition: background var(--transition), transform var(--transition);
+}
+
+.carousel-btn:hover {
+    background: var(--orange-600);
+    transform: translateY(-1px);
+}
+
+.carousel-btn:active {
+    transform: translateY(0);
+}
+
+
 /* How it Works */
 
 .how-it-works {
@@ -636,4 +708,15 @@ p {
 .social-links {
     justify-content: center;
 }
+}
+
+/* Media Query for Carousel */
+
+@media (max-width: 768px) {
+    .carousel {
+        grid-template-columns: 40px 1fr 40px;
+    }
+    .learn-card {
+        padding: 1.5rem;
+    }
 }
