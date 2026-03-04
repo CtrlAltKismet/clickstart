@@ -101,3 +101,41 @@ p {
 
 /* Buttons */
 
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.8 rem;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: var(--radius);
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all var(--transition);
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--orange-500);
+    color: var(--white);
+    border-color: var(--orange-500);
+}
+
+.btn-primary:hover {
+    background-color: var(--orange-600);
+    border-color: var(--orange-600);
+    color: var(--white);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+    background-color: var(--white);
+    color: var(--orange-600);
+    border-color: var(--orange-500);
+}
+
+.btn-secondary:hover {
+    background-color: var(--orange-50);
+    color: var(--orange-700);
+    border-color: var(--orange-600);
+}
+
