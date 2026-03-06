@@ -133,7 +133,31 @@
         </div>
     </section>
 
+    <!-- Wikipedia API for Users to search technical words -->
 
+    <section class="features">
+        <h2>Look Up A Digital Word</h2>
+
+        <p class="section-intro">
+            If you see a word you don't understand, type it below and ClickStart will explain it for you.
+        </p>
+
+        <div style="max-width: 500px; margin:0 auto; text-align:center;">
+            <!-- searchInput allowing JS to access what user types -->
+            <input
+                type="text"
+                id="searchInput" 
+                placeholder="Example: browser, malware, cloud"
+                style="width:100%; padding:10px; margin-bottom:10px;"
+            >
+            <!--searchButton lets JS detect when the button is clicked-->
+            <button class="btn btn-primary" id="searchButton">
+                Search
+            </button>
+        </div>
+        <!--where the definition will appear-->
+        <div id="result" style="max-width:700px; margin:30px auto 0;"></div>
+    </section>
 
 
 
