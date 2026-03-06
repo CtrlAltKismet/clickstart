@@ -69,6 +69,16 @@
     function searchWikipedia() {
 
     const searchTerm = document.getElementById("searchInput").value;
+    const resultBox = document.getElementById("result");
+
+    // Prevent empty searches
+    if (searchTerm === "") {
+        resultBox.innerHTML= `
+            <div class="feature-card">
+                <p>Please type a word to search.</p>
+            </div>`;
+            return;
+    }
 
     const url = "https://en.wikipedia.org/api/rest_v1/page/summary/" + searchTerm;
 
@@ -76,8 +86,6 @@
     fetch(url)
         .then(response => response.json())
         .then(data => {
-
-            const resultBox = document.getElementById("result");
 
             // Check if a definition exists
             if (data.extract) {
