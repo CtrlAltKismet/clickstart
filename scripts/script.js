@@ -49,7 +49,7 @@
             startAuto();
         });
 
-        // Pause on hover/focus so people can read for accessibility 
+        // Pause on hover/focus so people can read for accessibility.
         viewport.addEventListener("mouseenter", stopAuto);
         viewport.addEventListener("mouseleave", startAuto);
         viewport.addEventListener("focusin", stopAuto);

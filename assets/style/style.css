@@ -283,6 +283,22 @@ p {
     flex: 0 0 45%;
 }
 
+
+/* Hero 2 section on Learn page */
+
+.hero-2 {
+    text-align: center;
+
+}
+
+.hero-subtitle-2 {
+    text-align: center;
+    color: var(--gray-600);
+    max-width: 520px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
 /* IMAGE PLACEHOLDERS -- TO BE REMOVED ONE REAL IMAGES ARE ADDED */
 
 .image-placeholder {
