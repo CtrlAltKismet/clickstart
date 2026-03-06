@@ -59,3 +59,13 @@
         goToSlide(0);
         startAuto();
     });
+
+        // Help page search button
+    const button = document.getElementById("searchButton");
+    
+    button.addEventListener("click", searchWikipedia);
+    function searchWikipedia() {
+        const searchTerm = document.getElementById("searchInput").value;
+
+        console.log(searchTerm);
+    }
