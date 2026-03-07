@@ -101,8 +101,10 @@ nextButton.addEventListener("click", () => {
         nextButton.style.display = "none";
     } else {
         questionText.textContent = "Quiz Complete!";
-        answersContainer.innerHTML = "";
+        answersContainer.innerHTML = 
+        `<h3>Your final score is ${score} out of ${quizQuestions.length}</h3>`;
         nextButton.style.display = "none";
+        questionNumber.textContent = "";
     }
 });
 
