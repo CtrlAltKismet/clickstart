@@ -44,74 +44,74 @@ const quizQuestions = [
     },
 
     {
-        question: "",
+        question: "Which of the following should you NOT do when managing your passwords?",
         answers: [
-            "",
-            "",
-            "",
-            "",
+            "Use a mix of uppercase, lowercase, numbers, and symbols.",
+            "Use a unique password for every important account.",
+            "Write your passwords on a sticky note attached to your monitor.",
+            "Change your important passwords regularly",
         ],
-        correct: ""
+        correct: "Write your passwords on a sticky note attached to your monitor."
 
     },
 
     {
-        question: "",
+        question: "Why is it important to keep antivirus software updated?",
         answers: [
-            "",
-            "",
-            "",
-            "",
+            "It makes your computer screen brighter",
+            "It provides new virus definitions to detect the latest threats.",
+            "It deletes all files on your computer.",
+            "It increases internet speed.",
         ],
-        correct: ""
+        correct: "It provides new virus definitions to detect the latest threats."
 
     },
 
     {
-        question: "",
+        question: "Which of the following is an example of hardware?",
         answers: [
-            "",
-            "",
-            "",
-            "",
+            "A computer mouse",
+            "Microsoft Word",
+            "The operating system",
+            "A mobile application",
         ],
-        correct: ""
+        correct: "A computer mouse"
 
     },
 
     {
-        question: "",
+        question: "What is the main role of an Operating System (OS)?",
         answers: [
-            "",
-            "",
-            "",
-            "",
+            "To store all your personal files.",
+            "To search the internet.",
+            "To print documents.",
+            "To manage computer resources and allow hardware and software to work together.",
         ],
-        correct: ""
+        correct: "To manage computer resources and allow hardware and software to work together."
 
     },
 
     {
-        question: "",
+        question: "A program like an internet browser or photo editor is an example of:",
         answers: [
-            "",
-            "",
-            "",
-            "",
+            "Hardware",
+            "Software",
+            "A server",
+            "Firmware",
         ],
-        correct: ""
+        correct: "Software"
 
     },
 
     {
-        question: "",
+        question: "How do hardware and software work together when typing in Microsoft Word?",
         answers: [
-            "",
-            "",
-            "",
-            "",
+            "The monitor types the letters automatically.",
+            "The mouse writes the document.",
+            "The keyboard sends input, the operating system processes it, and Word displays it.",
+            "The printer sends the letters to Word.",
         ],
-        correct: ""
+        correct: "The keyboard sends input, the operating system processes it, and Word displays it."
 
     },
 
