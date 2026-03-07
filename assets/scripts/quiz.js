@@ -48,6 +48,23 @@ function selectAnswer(selectedAnswer) {
     score = updateScore(score, isCorrect);
 
     scoreDisplay.textContent = `${score}`;
+
+    const buttons = document.querySelectorAll(".quiz-answer");
+
+    buttons.forEach(button => {
+
+        if (button.textContent === currentQuestion.correct) {
+            button.classList.add("correct");
+        }
+
+        if (button.textContent === selectedAnswer && !isCorrect) {
+            button.classList.add("incorrect");
+        }
+
+        button.disabled = true;
+    });
+
+    nextButton.style.display = "block";
 }
 
 // Checks if answer selected is correct
