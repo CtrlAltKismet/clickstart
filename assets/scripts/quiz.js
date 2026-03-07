@@ -6,6 +6,13 @@ const quizQuestions = require("./quizQuestions.js");
 let currentQuestionIndex = 0;
 let score = 0;
 
+// Connecting JS to the HTML
+
+const questionText = document.getElementById("question-text");
+const answersContainer = document.getElementById("answers");
+const scoreDisplay = document.getElementById("score");
+const nextButton = document.getElementById("next-btn");
+const questionNumber = document.getElementById("question-number");
 
 // Checks if answer selected is correct
 // Returns true if correct, false if not
