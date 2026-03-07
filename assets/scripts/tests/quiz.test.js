@@ -15,8 +15,9 @@ describe ("Quiz Logic Tests", () => {
         expect(checkAnswer("A", "A")).toBe(true);
     });
 
-    // Test to check what happens when an answer is wrong
-    test("checkAnswer returns false when answer is incorrect", () => {
-        //"B" is not the correct answer so function should return false
-        expect(checkAnswer("B", "A")).toBe(false);
+        // Test to check what happens when an answer is wrong
+        test("checkAnswer returns false when answer is incorrect", () => {
+            //"B" is not the correct answer so function should return false
+            expect(checkAnswer("B", "A")).toBe(false);
+        });
     });
