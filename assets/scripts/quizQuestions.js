@@ -30,7 +30,331 @@ const quizQuestions = [
             "To block websites"
         ],
         correct: "To protect your computer from malicious software"
+    },
+
+    {
+        question: "What does a Firewall mainly do?",
+        answers: [
+            "It scans emails for spelling errors.",
+            "It monitors and controls incoming and outgoing network traffic.",
+            "It backs up your important files.",
+            "It organises your desktop icons."
+        ],
+        correct: "It monitors and controls incoming and outgoing network traffic."
+    },
+
+    {
+        question: "",
+        answers: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: ""
+
+    },
+
+    {
+        question: "",
+        answers: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: ""
+
+    },
+
+    {
+        question: "",
+        answers: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: ""
+
+    },
+
+    {
+        question: "",
+        answers: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: ""
+
+    },
+
+    {
+        question: "",
+        answers: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: ""
+
+    },
+
+    {
+        question: "",
+        answers: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: ""
+
+    },
+
+    {
+        question: "",
+        answers: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: ""
+
+    },
+
+    {
+        question: "",
+        answers: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: ""
+
+    },
+
+    {
+        question: "",
+        answers: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: ""
+
+    },
+
+    {
+        question: "",
+        answers: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: ""
+
+    },
+
+    {
+        question: "",
+        answers: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: ""
+
+    },
+
+    {
+        question: "",
+        answers: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: ""
+
+    },
+
+    {
+        question: "",
+        answers: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: ""
+
+    },
+
+    {
+        question: "",
+        answers: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: ""
+
+    },
+
+    {
+        question: "",
+        answers: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: ""
+
+    },
+
+    {
+        question: "",
+        answers: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: ""
+
+    },
+
+    {
+        question: "",
+        answers: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: ""
+
+    },
+
+    {
+        question: "",
+        answers: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: ""
+
+    },
+
+    {
+        question: "",
+        answers: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: ""
+
+    },
+
+    {
+        question: "",
+        answers: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: ""
+
+    },
+
+    {
+        question: "",
+        answers: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: ""
+
+    },
+
+    {
+        question: "",
+        answers: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: ""
+
+    },
+
+    {
+        question: "",
+        answers: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: ""
+
+    },
+
+    {
+        question: "",
+        answers: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: ""
+
+    },
+
+    {
+        question: "",
+        answers: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: ""
+
+    },
+
+    {
+        question: "",
+        answers: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        correct: ""
+
     }
+
 ];
 
 export default quizQuestions;
