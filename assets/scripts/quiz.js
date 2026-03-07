@@ -38,12 +38,6 @@ function showQuestion() {
 
         answersContainer.appendChild(button);
     });
-
-    // Update progress bar
-    const progressPercent =
-    ((currentQuestionIndex + 1) / quizQuestions.length) * 100;
-
-    progressFill.style.width = progressPercent + "%";
 }
 
 
@@ -75,6 +69,13 @@ function selectAnswer(selectedAnswer) {
     });
 
     nextButton.style.display = "block";
+
+
+    // Update progress bar
+    const progressPercent =
+    ((currentQuestionIndex + 1) / quizQuestions.length) * 100;
+
+    progressFill.style.width = progressPercent + "%";
 }
 
 // Checks if answer selected is correct
@@ -119,6 +120,7 @@ nextButton.addEventListener("click", () => {
             currentQuestionIndex = 0;
             score = 0;
             scoreDisplay.textContent = " 0";
+            progressFill.style.width = "0%";
             showQuestion();
     });
 }
