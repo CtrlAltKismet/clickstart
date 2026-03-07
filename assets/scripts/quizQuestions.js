@@ -116,242 +116,242 @@ const quizQuestions = [
     },
 
     {
-        question: "",
+        question: "What is the primary function of a search engine?",
         answers: [
-            "",
-            "",
-            "",
-            "",
+            "To create Word documents.",
+            "To display web pages.",
+            "To search the internet for information using keywords.",
+            "To send emails.",
         ],
-        correct: ""
+        correct: "To search the internet for information using keywords."
 
     },
 
     {
-        question: "",
+        question: "What is the difference between a web browser and a search engine?",
         answers: [
-            "",
-            "",
-            "",
-            "",
+            "They are the same thing.",
+            "A browser protects against viruses.",
+            "A browser displays web pages and a search engine helps you find them.",
+            "A search engine is used for sending emails.",
         ],
-        correct: ""
+        correct: "A browser displays web pages and a search engine helps you find them."
 
     },
 
     {
-        question: "",
+        question: "What is a hyperlink?",
         answers: [
-            "",
-            "",
-            "",
-            "",
+            "A computer virus.",
+            "An advertisement.",
+            "A browsing history.",
+            "Text or an image that links to another page when clicked.",
         ],
-        correct: ""
+        correct: "Text or an image that links to another page when clicked."
 
     },
 
     {
-        question: "",
+        question: "What does a sponsored search result usually mean?",
         answers: [
-            "",
-            "",
-            "",
-            "",
+            "The company paid for the link to appear first.",
+            "It is the most accurate answer.",
+            "It is guaranteed virus-free.",
+            "It is a government website.",
         ],
-        correct: ""
+        correct: "The company paid for the link to appear first."
 
     },
 
     {
-        question: "",
+        question: "Why might you clear your browser cache and cookies?",
         answers: [
-            "",
-            "",
-            "",
-            "",
+            "To make your computer heavier.",
+            "To update your operating system.",
+            "To send emails faster.",
+            "To fix website loading problems and protect privacy.",
         ],
-        correct: ""
+        correct: "To fix website loading problems and protect privacy."
 
     },
 
     {
-        question: "",
+        question: "What is phishing?",
         answers: [
-            "",
-            "",
-            "",
-            "",
+            "A safe online game.",
+            "A scam attempting to steal personal information.",
+            "Deleting emails.",
+            "A file attachment.",
         ],
-        correct: ""
+        correct: "A scam attempting to steal personal information."
 
     },
 
     {
-        question: "",
+        question: "What is Two-Factor Authentication (2FA)?",
         answers: [
-            "",
-            "",
-            "",
-            "",
+            "Signing in with only one password.",
+            "Using two different forms of verification to access an account.",
+            "Checking your email twice daily.",
+            "An alternative way to send files.",
         ],
-        correct: ""
+        correct: "Using two different forms of verification to access an account."
 
     },
 
     {
-        question: "",
+        question: "What is a danger of clicking sponsored search results without checking them?",
         answers: [
-            "",
-            "",
-            "",
-            "",
+            "They may lead to scam or malicious websites.",
+            "They always load slower.",
+            "They delete your browser history.",
+            "They automatically download files.",
         ],
-        correct: ""
+        correct: "They may lead to scam or malicious websites."
 
     },
 
     {
-        question: "",
+        question: "What does the Bcc field in an email do?",
         answers: [
-            "",
-            "",
-            "",
-            "",
+            "Sends the email twice.",
+            "Deletes attachments.",
+            "Adds a signature automatically.",
+            "Hides the recipient's email address from other recipients.",
         ],
-        correct: ""
+        correct: "Hides the recipient's email address from other recipients."
 
     },
 
     {
-        question: "",
+        question: "What is the main purpose of a folder in a file system?",
         answers: [
-            "",
-            "",
-            "",
-            "",
+            "To store applications.",
+            "To connect to the internet.",
+            "To send emails.",
+            "To organize and group related files.",
         ],
-        correct: ""
+        correct: "To organize and group related files."
 
     },
 
     {
-        question: "",
+        question: "What is the part of a filename after the dot called? (.pdf, .jpg)",
         answers: [
-            "",
-            "",
-            "",
-            "",
+            "File name",
+            "File shortcut",
+            "File extension",
+            "File format",
         ],
-        correct: ""
+        correct: "File extension"
 
     },
 
     {
-        question: "",
+        question: "Which key is used to toggle uppercase typing without holding it down?",
         answers: [
-            "",
-            "",
-            "",
-            "",
+            "Ctrl",
+            "Alt",
+            "Shift",
+            "Caps Lock",
         ],
-        correct: ""
+        correct: "Caps Lock"
 
     },
 
     {
-        question: "",
+        question: "What does Ctrl + S do in most programs?",
         answers: [
-            "",
-            "",
-            "",
-            "",
+            "Prints the document.",
+            "Saves the document.",
+            "Closes the program.",
+            "Underlines text.",
         ],
-        correct: ""
+        correct: "Saves the document."
 
     },
 
     {
-        question: "",
+        question: "What does the Italics formatting option do?",
         answers: [
-            "",
-            "",
-            "",
-            "",
+            "Makes text slanted.",
+            "Makes text bigger.",
+            "Makes text bold.",
+            "Underlines text.",
         ],
-        correct: ""
+        correct: "Makes text slanted."
 
     },
 
     {
-        question: "",
+        question: "What is a hierarchical folder structure?",
         answers: [
-            "",
-            "",
-            "",
-            "",
+            "Folders organised inside other folders.",
+            "Random files on the desktop.",
+            "A single folder for everything.",
+            "Files sorted alphabetically.",
         ],
-        correct: ""
+        correct: "Folders organised inside other folders."
 
     },
 
     {
-        question: "",
+        question: "Which file extension is commonly used for Word documents?",
         answers: [
-            "",
-            "",
-            "",
-            "",
+            ".jpg",
+            ".docx",
+            ".mp3",
+            ".png",
         ],
-        correct: ""
+        correct: ".docx"
 
     },
 
     {
-        question: "",
+        question: "What is the keyboard shortcut for copying text?",
         answers: [
-            "",
-            "",
-            "",
-            "",
+            "Ctrl + V",
+            "Ctrl + C",
+            "Ctrl + S",
+            "Ctrl + P",
         ],
-        correct: ""
+        correct: "Ctrl + C"
 
     },
 
     {
-        question: "",
+        question: "What is the keyboard shortcut for pasting text?",
         answers: [
-            "",
-            "",
-            "",
-            "",
+            "Ctrl + X",
+            "Ctrl + P",
+            "Ctrl + A",
+            "Ctrl + V",
         ],
-        correct: ""
+        correct: "Ctrl + V"
 
     },
 
     {
-        question: "",
+        question: "What should you do after creating a document to find it later?",
         answers: [
-            "",
-            "",
-            "",
-            "",
+            "Close the computer.",
+            "Restart the computer.",
+            "Delete the file.",
+            "Save the document with a clear name and location.",
         ],
-        correct: ""
+        correct: "Save the document with a clear name and location."
 
     },
 
     {
-        question: "",
+        question: "Which of the following is good email etiquette?",
         answers: [
-            "",
-            "",
-            "",
-            "",
+            "Use a clear subject line and polite language.",
+            "Write in all capital letters.",
+            "Send blank emails.",
+            "Ignore spelling.",
         ],
-        correct: ""
+        correct: "Use a clear subject line and polite language."
 
     }
 
