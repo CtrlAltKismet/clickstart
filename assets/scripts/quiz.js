@@ -132,9 +132,11 @@ nextButton.addEventListener("click", () => {
         questionText.textContent = "Quiz Complete!";
 
         answersContainer.innerHTML = 
-        `<h3>Your final score is ${score} out of ${quizQuestions.length}</h3>
-        <p> You scored <strong>${percentage}%</strong></p>
-        <button id="restart-btn" class="btn btn-primary">Restart Quiz</button>`;
+        `<div class="quiz-results">
+            <h3>Your final score is ${score} out of ${quizQuestions.length}</h3>
+            <p> You scored <strong>${percentage}%</strong></p>
+            <button id="restart-btn" class="btn btn-primary">Restart Quiz</button>
+        </div>`;
 
         nextButton.style.display = "none";
         questionNumber.textContent = "";
