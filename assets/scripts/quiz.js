@@ -126,10 +126,16 @@ nextButton.addEventListener("click", () => {
         showQuestion();
         nextButton.style.display = "none";
     } else {
+        // calculate percentage of score for assessing quiz results
+        const percentage = Math.round((score / quizQuestions.length) * 100);
+
         questionText.textContent = "Quiz Complete!";
+
         answersContainer.innerHTML = 
         `<h3>Your final score is ${score} out of ${quizQuestions.length}</h3>
+        <p> You scored <strong>${percentage}%</strong></p>
         <button id="restart-btn" class="btn btn-primary">Restart Quiz</button>`;
+
         nextButton.style.display = "none";
         questionNumber.textContent = "";
 
@@ -139,8 +145,8 @@ nextButton.addEventListener("click", () => {
             scoreDisplay.textContent = " 0";
             progressFill.style.width = "0%";
             showQuestion();
-    });
-}
+        });
+    }
 
 });
 
