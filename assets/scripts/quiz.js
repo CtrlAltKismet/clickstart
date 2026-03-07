@@ -1,3 +1,7 @@
+// Imported quiz questions
+const quizQuestions = require("./quizQuestions.js");
+
+
 // Quiz test
 
 // Checks if answer selected is correct
