@@ -637,6 +637,13 @@ quiz.answer.selected {
     background: #fef2f2;
 }
 
+/* Next Button */
+
+.quiz-actions {
+    margin-top: 2rem;
+    text-align: right;
+}
+
 /* Footer Section */
 
 .site-footer {
