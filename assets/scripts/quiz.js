@@ -126,8 +126,20 @@ nextButton.addEventListener("click", () => {
         showQuestion();
         nextButton.style.display = "none";
     } else {
-        // calculate percentage of score for assessing quiz results
+        // calculate percentage of score for assessing quiz results with feedback for results
         const percentage = Math.round((score / quizQuestions.length) * 100);
+
+        let feedback = "";
+
+        if (percentage >= 85) {
+            feedback = "Excellent work! You have a strong understanding of digital skills.";
+        } else if (percentage >= 65) {
+            feedback = "Good job! You understand most of the material.";
+        } else if (percentage >= 40) {
+            feedback = "You're making progress, but reviewing the lessons would help.";
+        } else {
+            feedback = "Consider revising the learning sections before trying again.";
+        }
 
         questionText.textContent = "Quiz Complete!";
 
@@ -135,6 +147,7 @@ nextButton.addEventListener("click", () => {
         `<div class="quiz-results">
             <h3>Your final score is ${score} out of ${quizQuestions.length}</h3>
             <p> You scored <strong>${percentage}%</strong></p>
+            <p class="quiz-feedback">${feedback}</p>
             <button id="restart-btn" class="btn btn-primary">Restart Quiz</button>
         </div>`;
 
