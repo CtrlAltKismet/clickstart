@@ -1082,6 +1082,8 @@ p {
     }
 }
 
+/* Mobile */
+
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
@@ -1089,6 +1091,19 @@ p {
     h2 {
         font-size: 1.65rem;
     }
+
+.explorer-window {
+    grid-template-columns: 1fr;
+}
+
+.explorer-sidebar {
+    display: none;
+}
+
+.explorer-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+}
 
 /* Mobile Nav */
 
