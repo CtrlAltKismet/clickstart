@@ -805,6 +805,45 @@ p {
     color: var(--orange-700);
 }
 
+.selected-path {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: var(--gray-600);
+}
+
+.practice-window label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+    color: var(--gray-800);
+}
+
+.practice-window input,
+.practice-window textarea {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid var(--gray-200);
+    border-radius: var(--radius);
+    font-family: var(--font-family);
+    font-size: 1rem;
+    color: var(--gray-800);
+    background-color: var(--white);
+    transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.practice-window input:focus,
+.practice-window textarea:focus {
+    outline: none;
+    border-color: var(--orange-500);
+    box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.15);
+}
+
+.practice-window textarea {
+    resize: vertical;
+    min-height: 180px;
+}
+
 /* Footer Section */
 
 .site-footer {
