@@ -839,6 +839,17 @@ p {
     border-radius: var(--radius);
 }
 
+.folder-instructions {
+    margin-bottom: 1rem;
+    color: var(--gray-600);
+    font-size: 0.95rem;
+}
+
+.folder-view {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
 
 
 .folder-btn {
