@@ -773,7 +773,36 @@ p {
     margin-top: 1rem;
 }
 
+.folder-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 140px;
+    min-height: 100px;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: var(--radius);
+    background-color: var(--white);
+    font-family: var(--font-family);
+    font-size: 1rem;
+    color: var(--gray-800);
+    cursor: pointer;
+    transition: all var(--transition);
+    box-shadow: var(--shadow-sm);
+}
 
+.folder-btn:hover {
+    background-color: var(--orange-50);
+    border-color: var(--orange-400);
+}
+
+.folder-btn.selected {
+    background-color: var(--orange-100);
+    border-color: var(--orange-500);
+    color: var(--orange-700);
+}
 
 .selected-path {
     margin-bottom: 1rem;
