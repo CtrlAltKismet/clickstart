@@ -769,6 +769,42 @@ p {
     margin-bottom: 1.5rem;
 }
 
+.document-preview p + p {
+    margin-top: 1rem;
+}
+
+.folder-path-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 1rem 0 1.25rem;
+}
+
+.folder-btn {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    text-align: left;
+    border: 2px solid var(--gray-200);
+    border-radius: var(--radius);
+    background-color: var(--white);
+    color: var(--gray-800);
+    cursor: pointer;
+    transition: all var(--transition);
+}
+
+.folder-btn:hover {
+    background-color: var(--orange-50);
+    border-color: var(--orange-400);
+}
+
+.folder-btn.selected {
+    background-color: var(--orange-100);
+    border-color: var(--orange-500);
+    color: var(--orange-700);
+}
+
 /* Footer Section */
 
 .site-footer {
