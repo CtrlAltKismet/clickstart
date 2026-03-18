@@ -844,6 +844,52 @@ p {
     min-height: 180px;
 }
 
+.modal-actions,
+.email-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.modal-actions {
+    margin-top: 0.5rem;
+}
+
+.attachment-status {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--gray-600);
+}
+
+.form-message {
+    margin-top: 1rem;
+    font-weight: 500;
+    min-height: 1.5rem;
+    color: var(--orange-600);
+}
+
+.practice-results {
+    margin-top: 1rem;
+}
+
+.results-card {
+    text-align: center;
+    padding: 2rem;
+}
+
+.results-card h2 {
+    margin-top: 1rem;
+}
+
+.results-card p + p {
+    margin-top: 0.75rem;
+}
+
+.hidden {
+    display: none;
+}
+
 /* Footer Section */
 
 .site-footer {
