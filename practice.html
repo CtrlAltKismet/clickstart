@@ -140,10 +140,30 @@
             <div class="window-body">
                 <button id="composeEmailBtn" class="primary-btn">Compose</button>
 
-                
+                <form id="emailForm" class="email-form hidden" novalidate> 
+                    <label for="recipientInput">To</label>
+                    <input type="email" id="recipientInput" name="recipientInput" placeholder="Enter email address">
+
+                    <label for="subjectInput">Subject</label>
+                    <input type="text" id="subjectInput" name="subjectInput" placeholder="Enter subject">
+
+                    <label for="messageInput">Message</label>
+                    <textarea id="messageInput" name="messageInput" rows="8" placeholder="Write your email here"></textarea>
+
+                    <div class="email-actions">
+                        <button id="attachFileBtn" class="secondary-btn" type="button">Attach Saved File</button>
+                        <p id="attachmentStatus" class="attachment-status">No file attached</p>
+                    </div>
+
+                    <button id="sendEmailBtn" class="primary-btn" type="Submit">Send Email</button>
+
+                    <p id="emailMessage" class="form-message" aria-live="polite"></p>
+                </form>
             </div>
         </section>
     </section>
+
+    
 </main>
 
 
