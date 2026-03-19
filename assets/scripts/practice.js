@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
         practiceStatusMessage.textContent = "File saved successfully.";
         saveModal.classList.add("hidden");
         emailSection.classList.remove("hidden");
-        practiceProgress.textContent = "Step 2 of 2: Send your email.";
+        practiceProgress.textContent = "Step 2 of 2: Send your email to employer@clickstartmail.com.";
         documentSection.classList.add("hidden");
         emailSection.scrollIntoView({ behavior: "smooth" });
     });
@@ -157,16 +157,31 @@ document.addEventListener("DOMContentLoaded", function () {
             .map(line => line.trim())
             .filter(line => line !== "");
 
+        const signOffPhrases = ["kind regards", "yours sincerely", "best regards"];
+        
         const lastLine = messageLines.length > 0
             ? messageLines[messageLines.length - 1].toLowerCase()
             : "";
 
-        const signOffPhrases = ["Kind regards", "Yours sincerely", "Best regards"];
-        const hasSignOff = signOffPhrases.some(phrase => lastLine.startsWith(phrase));
+        const secondLastLine = messageLines.length > 1
+            ? messageLines[messageLines.length - 2].toLowerCase()
+            : "";
+        
+        const hasSignOffOnLastLine = signOffPhrases.some(phrase => lastLine.startsWith(phrase));
+        const hasSignOffOnSecondLastLine = signOffPhrases.some(phrase => secondLastLine.startsWith(phrase));
 
-        const hasMainMessage = hasSignOff
-            ? messageLines.length > 1
-            : messageLines.length > 0;
+        const hasSignOff = hasSignOffOnLastLine || hasSignOffOnSecondLastLine;
+
+        let hasMainMessage = false;
+
+        if (hasSignOffOnLastLine) {
+            hasMainMessage = messageLines.length > 1;
+        } else if (hasSignOffOnSecondLastLine) {
+            hasMainMessage = messageLines.length > 2;
+        } else {
+            hasMainMessage = messageLines.length > 0;
+        }
+    
 
         emailMessage.textContent = "";
 
@@ -189,13 +204,13 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (!hasSignOff) {
-            emailMessage.textContent = "Please include a sign-off such as 'Kind regards', 'Best regards' or 'Yours sincerely'.";
+            emailMessage.textContent = "Please include a sign-off such as 'kind regards', 'best regards' or 'yours sincerely'.";
             practiceState.signOffFirstTry = false;
             return;
         }
 
         if (!practiceState.fileAttached) {
-            emailMessage.textcontent = "Please attach your saved cover letter before sending.";
+            emailMessage.textContent = "Please attach your saved cover letter before sending.";
             practiceState.attachmentFirstTry = false;
             return;
         }
