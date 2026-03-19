@@ -35,6 +35,14 @@ document.addEventListener("DOMContentLoaded", function ()) {
 
                 selectedPathText.textContent = "Selected folder: " + [...currentPath, folder].join(" > ");
             });
+
+            // DOUBLE CLICK = open
+            btn.addEventListener("dblclick", () => {
+                currentPath.push(folder);
+                selectedFolder = null;
+                updatePath();
+                renderFolders();
+            });
         })
     }
 }
