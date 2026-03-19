@@ -19,6 +19,13 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentPath = ["This PC"];
     let selectedFolder = null;
 
+    const practiceState = {
+        score: 0,
+        folderFirstTry: true,
+        fileNameFirstTry: true,
+        fileSaved: false,
+    };
+
     // Folder structure (fake file system)
     const fileSystem = {
         "This PC": ["Documents"],
