@@ -18,6 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
         "Homework": []
     };
 
+    openSaveModalBtn.addEventListener("click", () => {
+        saveModal.classList.remove("hidden");
+    });
+
+    closeSaveModalBtn.addEventListener("click", () => {
+        saveModal.classList.add("hidden");
+    });
+
     // Render folders in current location
     function renderFolders() {
         folderView.innerHTML = "";
