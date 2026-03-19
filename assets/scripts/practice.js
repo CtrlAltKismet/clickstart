@@ -17,6 +17,21 @@ document.addEventListener("DOMContentLoaded", function () {
     const practiceProgress = document.getElementById("practiceProgress");
     const practiceStatusMessage = document.getElementById("practiceStatusMessage");
 
+    const composeEmailBtn = document.getElementById("composeEmailBtn");
+    const emailForm = document.getElementById("emailForm");
+    const recipientInput = document.getElementById("recipientInput");
+    const subjectInput = document.getElementById("subjectInput");
+    const messageInput = document.getElementById("messageInput");
+    const attachFileBtn = document.getElementById("attachFileBtn");
+    const attachmentStatus = document.getElementById("attachmentStatus");
+    const sendEmailBtn = document.getElementById("sendEmailBtn");
+    const emailMessage = document.getElementById("emailMessage");
+
+    const resultsSection = document.getElementById("resultsSection");
+    const practiceScoreText = document.getElementById("practiceScoreText");
+    const practicePercentageText = document.getElementById("practicePercentageText");
+    const practiceFeedbackText = document.getElementById("practiceFeedbackText");
+
     let currentPath = ["This PC"];
     let selectedFolder = null;
 
