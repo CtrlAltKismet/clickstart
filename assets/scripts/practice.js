@@ -14,4 +14,18 @@ document.addEventListener("DOMContentLoaded", function ()) {
         "Digital Skills for Beginners": ["Homework"],
         "Homework": []
     };
+
+    // Render folders in current location
+    function renderFolders() {
+        folderView.innerHTML = "";
+
+        const currentFolder = currentPath[currentPath.length - 1];
+        const folders = fileSystem[currentFolder];
+
+        folders.forEach(folder => {
+            const btn = document.createElement("button");
+            btn.classList.add("folder-btn");
+            btn.textContent = "📁 " + folder;
+        })
+    }
 }
