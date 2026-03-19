@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const folderView = document.getElementById("folderView");
     const explorerPath = document.getElementById("explorerPath");
     const selectedPathText = document.getElementById("selectedPath");
+    const openSaveModalBtn = document.getElementById("openSaveModalBtn");
+    const closeSaveModalBtn = document.getElementById("closeSaveModalBtn");
+    const saveModal = document.getElementById("saveModal");
 
     let currentPath = ["This PC"];
     let selectedFolder = null;
