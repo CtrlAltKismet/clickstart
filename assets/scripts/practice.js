@@ -3,9 +3,18 @@ document.addEventListener("DOMContentLoaded", function () {
     const folderView = document.getElementById("folderView");
     const explorerPath = document.getElementById("explorerPath");
     const selectedPathText = document.getElementById("selectedPath");
+    
     const openSaveModalBtn = document.getElementById("openSaveModalBtn");
     const closeSaveModalBtn = document.getElementById("closeSaveModalBtn");
     const saveModal = document.getElementById("saveModal");
+
+    const saveFileBtn = document.getElementById("saveFileBtn");
+    const fileNameInput = document.getElementById("fileNameInput");
+    const saveMessage = document.getElementById("saveMessage");
+
+    const documentSection = document.getElementById("documentSection");
+    const emailSection = document.getElementById("emailSection");
+    const practiceProgress = document.getElementById("practiceProgress");
 
     let currentPath = ["This PC"];
     let selectedFolder = null;
