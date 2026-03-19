@@ -35,6 +35,15 @@ document.addEventListener("DOMContentLoaded", function () {
         saveModal.classList.add("hidden");
     });
 
+    saveFileBtn.addEventListener("click", () => {
+        
+        const fileName = fileNameInput.value.trim();
+
+        // Checks the correct folder
+        const correctPath = ["This PC", "Documents", "Digital Skills for Beginners", "Homework"];
+        const isCorrectFolder = JSON.stringify(currentPath) === JSON.stringify(correctPath);
+    });
+
     // Render folders in current location
     function renderFolders() {
         folderView.innerHTML = "";
