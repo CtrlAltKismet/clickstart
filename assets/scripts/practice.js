@@ -1,11 +1,11 @@
-document.addEventListener("DOMContentLoaded", function ()) {
+document.addEventListener("DOMContentLoaded", function () {
 
     const folderView = document.getElementById("folderView");
     const explorerPath = document.getElementById("explorerPath");
     const selectedPathText = document.getElementById("selectedPath");
 
     let currentPath = ["This PC"];
-    let SelectedFolder = null;
+    let selectedFolder = null;
 
     // Folder structure (fake file system)
     const fileSystem = {
@@ -65,4 +65,8 @@ document.addEventListener("DOMContentLoaded", function ()) {
             selectedPathText.textContent = "Selected folder: None";
         }
     });
-}
+
+    // INITIAL LOAD
+    updatePath();
+    renderFolders();
+});
