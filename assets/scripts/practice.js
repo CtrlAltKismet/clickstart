@@ -118,6 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 selectedFolder = null;
                 updatePath();
                 renderFolders();
+                selectedPathText.textContent = "Selected folder: None";
             });
 
             folderView.appendChild(btn);
