@@ -128,7 +128,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Attachment button logic
 
-    
+    attachFileBtn.addEventListener("click", () => {
+        if (!practiceState.fileSaved) {
+            attachmentStatus.textContent = "Save your file before attaching it.";
+            practiceState,attachmentFirstTry = false;
+            return;
+        }
+
+        practiceState.fileAttached = true;
+        attachmentStatus.textContent = "Attached: Cover_Letter_V1";
+    });
 
     // Render folders in current location
     function renderFolders() {
