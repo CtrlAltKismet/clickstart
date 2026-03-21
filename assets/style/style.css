@@ -234,7 +234,7 @@ p {
 
 /* Mobile Menu Button */
 
-.mobile-menu-button {
+.mobile-menu-btn {
     display: none;
     flex-direction: column;
     gap: 5px;
