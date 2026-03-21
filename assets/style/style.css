@@ -358,7 +358,7 @@ p {
     padding: 1.5rem;
     box-shadow: var(--shadow-sm);
     text-align: left;
-    transition: box-shadow var(--transition), transform var (--transition);
+    transition: box-shadow var(--transition), transform var(--transition);
 }
 
 .feature-card:hover {
@@ -521,7 +521,7 @@ p {
     margin-bottom: 1rem;
 }
 
-.cta content p {
+.cta-content p {
     color: var(--gray-600);
     margin-bottom: 1.5rem;
     font-size: 1.05rem;
