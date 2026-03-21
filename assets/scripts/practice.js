@@ -252,26 +252,42 @@ document.addEventListener("DOMContentLoaded", function () {
             btn.classList.add("folder-btn");
             btn.textContent = "📁 " + folder;
 
-            // SINGLE CLICK = select
+            // Double Click and single click with accessibility to touch devices
+
+            let lastClickTime = 0;
+            let lastClickedFolder = null;
+
             btn.addEventListener("click", () => {
+                const now = new Date().getTime();
+            
+                // SINGLE CLICK = select
                 document.querySelectorAll(".folder-btn").forEach(b => b.classList.remove ("selected"));
                 btn.classList.add("selected");
                 selectedFolder = folder;
 
                 selectedPathText.textContent = "Selected folder: " + [...currentPath, folder].join(" > ");
-            });
+           
+                // DOUBLE CLICK / DOUBLE TAP detection
+                if (
+                    lastClickedFolder === folder &&
+                    (now - lastClickTime) < 400 // 400ms threshold
+                ) {
+                    //OPEN folder
+                    currentPath.push(folder);
+                    selectedFolder = null;
+                    updatePath();
+                    renderFolders();
+                    selectedPathText.textContent = "Selected folder: None";
+                }
 
-            // DOUBLE CLICK = open
-            btn.addEventListener("dblclick", () => {
-                currentPath.push(folder);
-                selectedFolder = null;
-                updatePath();
-                renderFolders();
-                selectedPathText.textContent = "Selected folder: None";
+                lastClickTime = now;
+                lastClickedFolder = folder;
             });
 
             folderView.appendChild(btn);
+
         });
+
     }
 
     // Update Path Bar
