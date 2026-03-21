@@ -793,7 +793,7 @@ p {
     padding: 0.85rem 1rem;
     margin-bottom: 1rem;
     background-color: var(--off-white);
-    border: 1px sold var(--gray-200);
+    border: 1px solid var(--gray-200);
     border-radius: var(--radius);
     font-size: 0.95rem;
 }
@@ -805,7 +805,7 @@ p {
 
 .explorer-window {
     display: grid;
-    grid-template-columns: 220 px 1fr;
+    grid-template-columns: 220px 1fr;
     gap: 1rem;
     margin-bottom: 1rem;
     min-height: 280px;
@@ -1108,7 +1108,7 @@ p {
 
 /* Mobile Nav */
 
-.main.nav {
+.main-nav {
     display: none;
 }
 .mobile-menu-btn {
