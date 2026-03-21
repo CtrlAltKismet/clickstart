@@ -1164,6 +1164,15 @@ p {
     max-width: 480px;
 }
 
+.hero-2 {
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+}
+
+.hero-2 .hero-image {
+    margin: 0 auto 2rem;
+}
+
 /*CTA stacks*/
 .cta-section {
     flex-direction: column;
