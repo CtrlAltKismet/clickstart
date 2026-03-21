@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const messageInput = document.getElementById("messageInput");
     const attachFileBtn = document.getElementById("attachFileBtn");
     const attachmentStatus = document.getElementById("attachmentStatus");
-    const sendEmailBtn = document.getElementById("sendEmailBtn");
     const emailMessage = document.getElementById("emailMessage");
 
     const resultsSection = document.getElementById("resultsSection");
