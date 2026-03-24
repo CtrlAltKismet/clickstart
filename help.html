@@ -35,7 +35,7 @@
                 <li><a href="learn.html" class="nav-link">Learn</a></li>
                 <li><a href="practice.html" class="nav-link">Practice</a></li>
                 <li><a href="quiz.html" class="nav-link">Quiz</a></li>
-                <li><a href="help.html" class="nav-link active">Help</a></li>
+                <li><a href="help.html" class="nav-link active" aria-current="page">Help</a></li>
             </ul>
         </nav>
 
@@ -53,7 +53,7 @@
     <section class="hero-2">
         <div class="hero-content">
             <h1>Need a Little Help?</h1>
-                    <p class="hero-subtitle-2">This page explains how to use ClickStart and answers common questions. If you're new to computers or digital skills, don't worry -- everything on this site is designed to be simple and beginner friendly.</p>
+                    <p class="hero-subtitle-2">This page explains how to use ClickStart and answers common questions. If you're new to computers or digital skills don't worry, everything on this site is designed to be simple and beginner-friendly.</p>
             <div class="hero-actions">
                 <a href="learn.html" class="btn btn-primary">Start Learning</a>
                 <a href="quiz.html" class="btn btn-secondary">Try the Quiz</a>
@@ -63,7 +63,7 @@
         <div class="hero-image">
             <picture>
                 <source srcset="assets/images/help-illustration.webp" type="image/webp">
-                <img src="assets/images/help-illustration.png" alt="Illustration of someone receiving help with technology" loading="lazy">
+                <img src="assets/images/help-illustration.png" alt="Illustration of someone receiving help with technology">
             </picture>
         </div>
     </section>
@@ -103,7 +103,7 @@
 
         <h2>Common Questions</h2>
 
-        <p class="section-intro">Here are answers to questions beginners often have when using the ClickStart.</p>
+        <p class="section-intro">Here are answers to questions beginners often have when using ClickStart.</p>
 
         <div class="features-grid">
             
@@ -114,7 +114,7 @@
 
             <div class="feature-card">
                 <h3>Can I use this on my phone?</h3>
-                <p>Yes. The website works on phones, tablets and ocmputers using responsive design.</p>
+                <p>Yes. The website works on phones, tablets and computers using responsive design.</p>
             </div>
 
             <div class="feature-card">
@@ -139,7 +139,7 @@
         </div>
     </section>
 
-    <!-- Wikipedia API for Users to search technical words -->
+    <!-- Digital word search -->
 
     <section class="features">
         <h2>Look Up A Digital Word</h2>
@@ -149,19 +149,16 @@
         </p>
 
         <div style="max-width: 500px; margin:0 auto; text-align:center;">
-            <!-- searchInput allowing JS to access what user types -->
             <input
                 type="text"
                 id="searchInput" 
                 placeholder="Example: browser, malware, cloud"
                 style="width:100%; padding:10px; margin-bottom:10px;"
             >
-            <!--searchButton lets JS detect when the button is clicked-->
             <button class="btn btn-primary" id="searchButton">
                 Search
             </button>
         </div>
-        <!--where the definition will appear-->
         <div id="result" style="max-width:700px; margin:30px auto 0;"></div>
     </section>
 
