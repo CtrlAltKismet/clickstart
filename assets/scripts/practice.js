@@ -45,6 +45,8 @@ document.addEventListener("DOMContentLoaded", function () {
         recipientFirstTry: true,
         subjectFirstTry: true,
         messageFirstTry: true,
+        greetingFirstTry: true,
+        nameFirstTry: true,
         signOffFirstTry: true,
         attachmentFirstTry: true,
 
@@ -158,32 +160,53 @@ document.addEventListener("DOMContentLoaded", function () {
             .map(line => line.trim())
             .filter(line => line !== "");
 
-        const signOffPhrases = ["kind regards", "yours sincerely", "best regards"];
+        const greetingPhrases = ["dear", "hello", "hi"];
+        const signOffPhrases = ["kind regards", "best regards", "yours sincerely", "yours faithfully"];
+
         
-        const lastLine = messageLines.length > 0
-            ? messageLines[messageLines.length - 1].toLowerCase()
-            : "";
+        const firstLine = messageLines.length > 0 ? messageLines[0].toLowerCase() : "";
+        const lastLine = messageLines.length > 0 ? messageLines[messageLines.length - 1].trim() : "";
+        const secondLastLine = messageLines.length > 1 ? messageLines[messageLines.length - 2].toLowerCase() : "";
 
-        const secondLastLine = messageLines.length > 1
-            ? messageLines[messageLines.length - 2].toLowerCase()
-            : "";
-        
-        const hasSignOffOnLastLine = signOffPhrases.some(phrase => lastLine.startsWith(phrase));
-        const hasSignOffOnSecondLastLine = signOffPhrases.some(phrase => secondLastLine.startsWith(phrase));
+        const hasGreeting = greetingPhrases.some(phrase => firstLine.startsWith(phrase));
 
-        const hasSignOff = hasSignOffOnLastLine || hasSignOffOnSecondLastLine;
+        const hasSignOff = signOffPhrases.some(phrase => secondLastLine.startsWith(phrase));
 
-        let hasMainMessage = false;
+        const hasName = lastLine.length >= 2 &&
+            !signOffPhrases.some(phrase => lastLine.toLowerCase().startsWith(phrase));
 
-        if (hasSignOffOnLastLine) {
-            hasMainMessage = messageLines.length > 1;
-        } else if (hasSignOffOnSecondLastLine) {
-            hasMainMessage = messageLines.length > 2;
-        } else {
-            hasMainMessage = messageLines.length > 0;
-        }
+        const bodyLines = messageLines.slice(1, -2);
+        const hasMainMessage = bodyLines.length > 0;
 
         emailMessage.textContent = "";
+
+        if (!hasValidRecipient) {
+            practiceState.recipientFirstTry = false;
+        }
+
+        if (!hasSubject) {
+            practiceState.subjectFirstTry = false;
+        }
+
+        if (!hasGreeting) {
+            practiceState.greetingFirstTry = false;
+        }
+
+        if (!hasMainMessage) {
+            practiceState.messageFirstTry = false;
+        }
+
+        if (!hasSignOff) {
+            practiceState.signOffFirstTry = false;
+        }
+
+        if (!hasName) {
+            practiceState.nameFirstTry = false;
+        }
+
+        if (!practiceState.fileAttached) {
+            practiceState.attachmentFirstTry = false;
+        }
 
         if (!hasValidRecipient) {
             emailMessage.textContent = "Please enter the correct recipient email address.";
@@ -197,15 +220,27 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
+        if (!hasGreeting) {
+            emailMessage.textContent = "Please begin your email with a greeting such as 'Dear Employer' or 'Hello'.";
+            practiceState.greetingFirstTry = false;
+            return;
+        }
+
         if (!hasMainMessage) {
-            emailMessage.textContent = "Please write the main part of your email message.";
+            emailMessage.textContent = "Please write the main part of your email between the greeting and sign-off.";
             practiceState.messageFirstTry = false;
             return;
         }
 
         if (!hasSignOff) {
-            emailMessage.textContent = "Please include a sign-off such as 'kind regards', 'best regards' or 'yours sincerely'.";
+            emailMessage.textContent = "Please include a sign-off such as 'Kind regards', 'Best regards', 'Yours sincerely' or 'Yours faithfully'.";
             practiceState.signOffFirstTry = false;
+            return;
+        }
+
+        if (!hasName) {
+            emailMessage.textContent = "Please type your name underneath your sign-off.";
+            practiceState.nameFirstTry = false;
             return;
         }
 
@@ -214,30 +249,38 @@ document.addEventListener("DOMContentLoaded", function () {
             practiceState.attachmentFirstTry = false;
             return;
         }
-        
-            if (practiceState.recipientFirstTry) {
-                practiceState.score += 1;
-            }
 
-            if (practiceState.subjectFirstTry) {
-                practiceState.score += 1;
-            }
+        if (practiceState.recipientFirstTry) {
+            practiceState.score += 1;
+        }
 
-            if (practiceState.messageFirstTry) {
-                practiceState.score += 1;
-            }
+        if (practiceState.subjectFirstTry) {
+            practiceState.score += 1;
+        }
 
-            if (practiceState.signOffFirstTry) {
-                practiceState.score += 1;
-            }
+        if (practiceState.greetingFirstTry) {
+            practiceState.score += 1;
+        }
 
-            if (practiceState.attachmentFirstTry) {
-                practiceState.score += 1;
-            }
+        if (practiceState.messageFirstTry) {
+            practiceState.score += 1;
+        }
 
-            practiceState.emailSent = true;
-            showResults();
-        });
+        if (practiceState.signOffFirstTry) {
+            practiceState.score += 1;
+        }
+
+        if (practiceState.nameFirstTry) {
+            practiceState.score += 1;
+        }
+
+        if (practiceState.attachmentFirstTry) {
+            practiceState.score += 1;
+        }
+
+        practiceState.emailSent = true;
+        showResults();
+    });
 
 
     // Render folders in current location
@@ -306,7 +349,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function showResults() {
-        const totalMarks = 7;
+        const totalMarks = 9;
         const percentage = Math.round((practiceState.score / totalMarks) * 100);
 
         emailSection.classList.add("hidden");
