@@ -188,7 +188,7 @@ p {
 
 .logo-icon {
     width: 32px;
-    height: 32;
+    height: 32px;
     object-fit: contain;
 }
 
@@ -301,7 +301,7 @@ p {
     margin-top: 2rem;
 }
 
-/* IMAGE PLACEHOLDERS -- TO BE REMOVED ONE REAL IMAGES ARE ADDED */
+/* Image placeholders */
 
 .image-placeholder {
     width: 100%;
@@ -1003,7 +1003,7 @@ p {
 .footer-nav h4,
 .footer-social h4 {
     color: var(--white);
-    margin-bottom: 0.75;
+    margin-bottom: 0.75rem;
     font-size: 1rem;
 }
 
