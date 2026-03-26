@@ -516,14 +516,14 @@ p {
     flex: 1;
 }
 
-.cta-content h2 {
+.cta-content h3 {
     margin-bottom: 1rem;
 }
 
 .cta-content p {
     color: var(--gray-600);
     margin-bottom: 1.5rem;
-    font-size: 1.05rem;
+    font-size: 0.95rem;
     max-width: 520px;
 }
 
