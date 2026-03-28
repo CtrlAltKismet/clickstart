@@ -966,15 +966,14 @@ A range of tools were used during development to support both functionality and 
 
 ## Installation
 
-To clone this repository locally, use the following command:
+Clone the repo:
 
+```bash
 git clone https://github.com/CtrlAltKismet/clickstart.git
-
-Once cloned, navigate into the project directory:
-
 cd clickstart
+```
 
-You can then open the project in your preferred code editor (e.g. VS Code) and run it using Live Server.
+Use Live Server to run in your browser locally.
 
 ---
 ## Deployment
