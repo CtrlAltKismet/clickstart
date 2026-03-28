@@ -584,7 +584,7 @@ Automatic slide movement is created using setInterval(), with slides changing ev
 
 For accessibility and readability, the automatic movement pauses when the user hovers over the carousel or focuses on it using the keyboard. This prevents content from moving while the learner is trying to read it.
 
-### Help Page Wikiepdia Search (help.js)
+### Help Page Wikipedia Search (help.js)
 
 The Help page uses the Wikipedia REST API to allow users to look up digital terms and receive a simple explanation. JavaScript selects the search button and text input field, then adds event listeners so a search can be started either by clicking the button or pressing the Enter key.
 
