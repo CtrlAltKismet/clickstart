@@ -913,7 +913,9 @@ A range of tools were used during development to support both functionality and 
 -	[ESLint – checks JavaScript for syntax errors, bad practices, and potential bugs](https://eslint.org/).
 -	Jest – to test for quiz logic.
 -	Lighthouse via Dev Tools
--	GitHub Pages for deployment
+-	GitHub - used for version control and to manage workflow throughout development with regular commits
+-	GitHub Pages - used to deploy final website.
+-	VS Code - used to write and edit HTML, CSS, and JavaScript files.
 -	Wikipedia API (REST) - Used to provide dynamic help content. 
 -	[Squoosh (Google) – Used to compress images into Webp format. ](https://squoosh.app/)
 -	[Fireship.dev - for mockups.](https://fireship.dev/amiresponsive)
