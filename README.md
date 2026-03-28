@@ -36,6 +36,7 @@ Please visit the deployed website [here](https://ctrlaltkismet.github.io/clickst
   - [User Stories Check](#user-stories-check)
   - [Testing on Other Devices](#testing-on-other-devices)
   - [Testing on Other Browsers](#testing-on-other-browsers)
+  - [Real World Testing and Feedback](#real-world-testing-and-feedback)
 - [Tools and Technologies Used](#tools-and-technologies-used)
 - [Installation](#installation)
 - [Deployment](#deployment)
@@ -899,6 +900,42 @@ To ensure each web page works as it should with the correct font and design, the
 **Brave:**
 
 <img width="1912" height="1019" alt="Website on Brave" src="https://github.com/user-attachments/assets/92944312-791e-464e-b8ed-a1435ebc6079" />
+
+---
+## Real World Testing and Feedback
+
+The website was tested with real learners in an Adult Education classroom environment. Learners interacted with the Practice and Quiz pages as part of their digital skills sessions, allowing observation of usability, engagement, and understanding.
+
+Observations included:
+
+- Learners were able to navigate the website independently with minimal guidance.
+- The Practice task was engaging and encouraged learners to think about real-world digital processes.
+- Some learners initially struggled with email structure, which informed improvements to validation.
+- The quiz format was well received, particularly the instant feedback and scoring system.
+- The Help page supported learners in understanding unfamiliar terminology without tutor intervention.
+
+Learner feedback included:
+
+- "The steps made it easier to understand what to do."
+- "The quiz was really good and I enjoyed it more than the paper copy."
+- "I like seeing my score at the end of the quiz."
+
+Based on this testing, several improvements were made:
+
+- Email validation was extended to require a greeting, sign off, and name.
+- Instructions were clarified to better support beginner learners.
+- Feedback messages were improved to be more specific and supportive.
+- Touchscreen support was improved for folder navigation.
+
+The project was also reviewed by a manager within the Adult Education setting. 
+
+Feedback highlighted that the website has strong potential as a practical teaching and assessment tool, particularly for supporting beginner learners in developing confidence with digital skills.
+
+The interactive elements, such as the Practice task and quiz, were noted as being especially useful for reinforcing classroom learning in a structured and engaging way.
+
+The project was recognised as something that could be further developed and potentially integrated into teaching practice in the future.
+
+The project was also identified as an example of work that could support future development within the organisation, with potential for expanding digital learning resources beyond traditional classroom delivery.
 
 ---
 
