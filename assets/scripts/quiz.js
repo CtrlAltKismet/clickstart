@@ -14,6 +14,7 @@ const scoreDisplay = document.getElementById("score");
 const nextButton = document.getElementById("next-btn");
 const questionNumber = document.getElementById("question-number");
 const progressFill = document.getElementById("progress-fill");
+const quizCard = document.getElementById("quiz-card");
 
 // Shuffle answers to randomise selection
 
@@ -170,10 +171,12 @@ nextButton.addEventListener("click", () => {
 nextButton.style.display = "none";
 
 showQuestion();
+quizCard.classList.remove("hidden");
 
-module.exports = {
-    checkAnswer,
-    updateScore,
-    nextQuestion
-};
-
+if (typeof module !== "undefined" && module.exports) {
+    module.exports = {
+        checkAnswer,
+        updateScore,
+        nextQuestion
+    };
+}
