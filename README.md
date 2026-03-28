@@ -283,3 +283,53 @@ As a tutor or educational provider, I want the website to assess learners’ dig
 -	Structure the site so it can be used as an assessment tool in a teaching environment.
 
 An additional user story would have involved using the website as a learning resource. However, the Learn section is currently marked as “coming soon” with the intention of adding content and continuing to develop this website at a later time. Due to time constraints, the core functionality of the website focuses on assessment through the Practice and Quiz pages. 
+
+---
+
+## Site Structure
+
+The ClickStart website follows a consistent, accessible, and user-friendly layout, using a clean orange and white colour scheme designed to support readability with darker fonts and reduce visual overwhelm. A navigation bar is displayed at the top of every page, allowing users to easily move between key sections of the website, and a drop-down menu available on smaller screens to allow accessibility for learners who may not have a computer at home. The website’s title is also clickable, enabling users to return to the homepage at any time. The structure has been designed intentionally straightforward and intuitive, particularly for users with limited digital experience.
+The website consists of five main pages, each with a clear purpose that supports the overall learning journey from introduction to assessment.
+
+1.	The **Home Page** can be accessed via the first link in the navigation bar. This page introduces users to ClickStart, outlining its purpose as a digital skills support platform for beginners. Learners can go straight to the learning page or the practice page with two additional buttons in the hero section. The homepage provides a clear and welcoming overview of what users can expect, with simple navigation and a clear call to action guiding users towards practising or testing their skills. The layout is intentionally minimal to avoid overwhelming inexperienced users and promote ease of navigation.
+
+2.	The **Learn Page** can be accessed via the second link in the navigation bar. This page currently contains a carousel of digital skills topics that are planned for future development. While much of the content is marked as “coming soon,” the structure demonstrates how the platform will evolve into a more complete learning resource. The intention is for each topic to link to dedicated learning pages, allowing users to access instructional content alongside relevant practical activities and quizzes.
+   
+3.	The **Practice Page** can be accessed via the third link in the navigation bar. This page provides users with guided, hands-on activities that simulate real digital tasks, such as file management, navigation, and email skills. The interactive design allows users to engage actively with content rather than passively reading, reinforcing practical skills that are directly transferable to real-world computer use. This page is a key part of the learning process, bridging the gap between theory and assessment.
+   
+4.	The **Quiz Page** can be accessed via the fourth link in the navigation bar. This page allows users to assess their knowledge through interactive multiple-choice questions. Users receive immediate feedback through visual indicators, helping them understand correct and incorrect answers. The quiz answers are additionally shuffled each time so learners must ensure they read the answers rather than memorising the location of correct answers. The quiz is designed to reinforce learning, build confidence, and provide an uncomplicated way for both learners and tutors to assess understanding.
+   
+5.	The **Help Page** can be accessed via the fifth and final link in the navigation bar. This page provides additional support for users who may need further clarification on key terms or concepts. It includes a search function powered by an external API, allowing users to quickly access definitions and explanations. If a search term yields no results, feedback is instantly provided to alert the user. The help page encourages independent learning and supports users who may require extra guidance outside of structured activities.
+
+Overall, the structure of the website has been designed to guide users through a logical progression of classroom learning  practise  test  support, ensuring that all elements of the learning process are covered. The consistent layout and clear navigation help reduce cognitive load, making the platform accessible and easy to use for beginner learners. 
+
+---
+## Wireframes
+
+Balsamiq was used to create each wireframe.
+
+Index Page:
+
+<img width="300" alt="Index Wireframe Computer screen" src="https://github.com/user-attachments/assets/129ed8bb-b40e-4ea9-8046-24eff29e84b4" />
+<img width="200" alt="Index Wireframe Mobile" src="https://github.com/user-attachments/assets/0bfbd4a4-ac69-4a45-8651-1c2a2a8d0feb" />
+
+Learn Page:
+
+<img width="300" alt="Learn Wireframe Computer screen" src="https://github.com/user-attachments/assets/c346d43f-c407-46c2-bf51-4fb86d79fd3d" />
+<img width="200" alt="Learn Wireframe Mobile" src="https://github.com/user-attachments/assets/1a232e8d-dfbc-4c15-80e0-0899fe70738d" />
+
+Practice Page:
+
+<img width="300" alt="Practice Wireframe computer screen" src="https://github.com/user-attachments/assets/f4e5d46d-8d06-4eec-8e6e-772ddefe6677" />
+<img width="200" alt="Practice Wireframe Mobile" src="https://github.com/user-attachments/assets/8ac3547c-1296-4f0c-ab41-ad99e60cf98a" />
+
+Quiz Page:
+
+<img width="300" alt="Quiz wireframe computer screen" src="https://github.com/user-attachments/assets/91f5c9b1-47ee-4031-8cae-e99ac52015dd" />
+<img width="200" alt="Quiz wireframe mobile" src="https://github.com/user-attachments/assets/64458348-baf6-4553-88df-f090cbad949c" />
+
+Help Page:
+
+<img width="300" alt="Help Wireframe Computer screen" src="https://github.com/user-attachments/assets/93782f5b-c35d-4ea2-8ca8-7ac1fc67511b" />
+<img width="200" alt="Help wireframe mobile" src="https://github.com/user-attachments/assets/28a6d5e1-aa4b-4d0b-a24a-99c55028a971" />
+
